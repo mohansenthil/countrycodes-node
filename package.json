@@ -1,6 +1,6 @@
 {
   "name": "country-codes-library",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The Country Code Library provides a collection of two-letter and three-letter country codes according to the ISO 3166-1 standard, as well as it provides USA, China and Canada Province codes (State codes / adminstrative division codes). In addition, it includes telephone calling codes, currency codes, currency Symbols for countries across the world.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,5 +25,30 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "telephone",
+    "calling",
+    "two digit",
+    "three digit",
+    "two-digit-country-code",
+    "three-digit-country-code",
+    "twolettercountrycode",
+    "countrycode",
+    "threelettercountrycode",
+    "USAStateCode",
+    "+2digitcode",
+    "+3digitcode",
+    "ISO-3166",
+    "country-codes",
+    "geography",
+    "canadaprovince",
+    "chinaprovince",
+    "proviencecode",
+    "provience",
+    "geocode",
+    "countrycodes",
+    "currencycodes",
+    "currencysymbols"
+  ]
 }
