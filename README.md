@@ -19,7 +19,7 @@ After installing the Country Codes Library, you can use it in your project to re
 ## JavaScript Example
 
 ```js
-const { TwoLetterISORegionCode, ThreeLetterISORegionCode, CountryCallingCodes, USAStateCode, CanadaProvinceCode, ChinaProvinceCode, CountryCurrencyCodes, CountryCurrencySymbols } = require('country-codes-lib');
+const { TwoLetterISORegionCode, ThreeLetterISORegionCode, CountryCallingCodes, USAStateCode, CanadaProvinceCode, ChinaProvinceCode, CountryCurrencyCodes, CountryCurrencySymbols } = require('country-codes-library');
 
 console.log(`USA's Two Letter Country Code is ${TwoLetterISORegionCode.UnitedStates}`);
 console.log(`India's Three Letter Country Code is ${ThreeLetterISORegionCode.India}`);
@@ -34,7 +34,7 @@ console.log(`Japan's Currency Symbol is ${CountryCurrencySymbols.Japan}`);
 ## TypeScript Example
 
 ```ts
-import { TwoLetterISORegionCode, ThreeLetterISORegionCode, CountryCallingCodes, USAStateCode, CanadaProvinceCode, ChinaProvinceCode, CountryCurrencyCodes, CountryCurrencySymbols } from 'country-codes-lib';
+import { TwoLetterISORegionCode, ThreeLetterISORegionCode, CountryCallingCodes, USAStateCode, CanadaProvinceCode, ChinaProvinceCode, CountryCurrencyCodes, CountryCurrencySymbols } from 'country-codes-library';
 
 console.log(`USA's Two Letter Country Code is ${TwoLetterISORegionCode.UnitedStates}`);
 console.log(`India's Three Letter Country Code is ${ThreeLetterISORegionCode.India}`);
