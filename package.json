@@ -1,0 +1,26 @@
+{
+  "name": "isocountrycodes",
+  "version": "1.0.0",
+  "description": "The Country Code Library provides a collection of two-letter and three-letter country codes according to the ISO 3166-1 standard, as well as it provides USA, China and Canada Province codes (State codes / adminstrative division codes). In addition, it includes telephone calling codes, currency codes, currency Symbols for countries across the world.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohansenthil/countrycodes-node.git"
+  },
+  "author": "mohan raj senthilnathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohansenthil/countrycodes-node/issues"
+  },
+  "homepage": "https://github.com/mohansenthil/countrycodes-node#readme",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
