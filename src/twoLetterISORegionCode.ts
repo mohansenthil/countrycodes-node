@@ -245,5 +245,5 @@ export const TwoLetterISORegionCode = {
     World: "001",
     Yemen: "YE",
     Zambia: "ZM",
-    Zimbabwe: "ZW",
+    Zimbabwe: "ZW"
 }
