@@ -3,6 +3,8 @@
 
 name: Publish country-codes-library to npm
 
+on:
+  workflow_dispatch:
             
 jobs:
   build:

@@ -110,6 +110,7 @@
   "exclude": [
     "./examples",
     "./dist",
-    "./node_modules"
+    "./node_modules",
+    "./test"
   ]
 }
