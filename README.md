@@ -268,11 +268,11 @@ const options: SearchOptions = {
 - `getCountriesByCallingCode(code)` - Find all countries with calling code
 
 #### Utility Functions
-- `searchCountries(query, options?)` - Search countries by name
-- `convertCountryCode(code, format)` - Convert between code formats
-- `getCallingCode(identifier)` - Get calling code for a country
-- `getCurrencyCode(identifier)` - Get currency code for a country
-- `getCurrencySymbol(identifier)` - Get currency symbol for a country
+- `searchCountries(countryName, options?)` - Search countries by name
+- `convertCountryCode(code, targetFormat)` - Convert between code formats
+- `getCallingCode(countryIdentifier)` - Get calling code for a country
+- `getCurrencyCode(countryIdentifier)` - Get currency code for a country
+- `getCurrencySymbol(countryIdentifier)` - Get currency symbol for a country
 - `getAllCurrencies()` - Get all unique currencies
 - `getAllCallingCodes()` - Get all unique calling codes
 

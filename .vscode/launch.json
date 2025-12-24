@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug new-features.js",
+        "program": "${workspaceFolder}/examples/javascript/new-features.js",
+        "cwd": "${workspaceFolder}",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  

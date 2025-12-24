@@ -121,10 +121,10 @@ export function getCountriesByCallingCode(callingCode: string): Country[] {
  * // Returns: [UnitedStates, UnitedKingdom, UnitedArabEmirates]
  * ```
  */
-export function searchCountries(query: string, options: SearchOptions = {}): Country[] {
+export function searchCountries(countryName: string, options: SearchOptions = {}): Country[] {
   const { caseSensitive = false, exactMatch = false } = options;
   
-  const searchQuery = caseSensitive ? query : query.toLowerCase();
+  const searchQuery = caseSensitive ? countryName : countryName.toLowerCase();
   
   return getAllCountries().filter(country => {
     const countryName = caseSensitive ? country.name : country.name.toLowerCase();
