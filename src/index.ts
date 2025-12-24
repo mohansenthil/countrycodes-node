@@ -10,6 +10,7 @@ export { USAStateCode } from './UnitedStates/USAStateCode';
 
 // New unified country data
 export { CountryData, getAllCountries, getAllCountryNames } from './countryData';
+export { CountryNames } from './countryNames';
 
 // TypeScript types
 export type {

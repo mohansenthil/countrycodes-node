@@ -18,7 +18,7 @@ describe('Country Lookup Utils', () => {
     it('should return country by 2-letter code', () => {
       const country = getCountryByCode2('US');
       expect(country).not.toBeNull();
-      expect(country?.name).toBe('UnitedStates');
+      expect(country?.name).toBe('United States');
       expect(country?.code2).toBe('US');
       expect(country?.code3).toBe('USA');
     });
@@ -26,7 +26,7 @@ describe('Country Lookup Utils', () => {
     it('should be case-insensitive', () => {
       const country = getCountryByCode2('us');
       expect(country).not.toBeNull();
-      expect(country?.name).toBe('UnitedStates');
+      expect(country?.name).toBe('United States');
     });
 
     it('should return null for invalid code', () => {
@@ -35,7 +35,7 @@ describe('Country Lookup Utils', () => {
     });
 
     it('should handle various countries', () => {
-      expect(getCountryByCode2('GB')?.name).toBe('UnitedKingdom');
+      expect(getCountryByCode2('GB')?.name).toBe('United Kingdom');
       expect(getCountryByCode2('DE')?.name).toBe('Germany');
       expect(getCountryByCode2('JP')?.name).toBe('Japan');
       expect(getCountryByCode2('IN')?.name).toBe('India');
@@ -47,14 +47,14 @@ describe('Country Lookup Utils', () => {
     it('should return country by 3-letter code', () => {
       const country = getCountryByCode3('USA');
       expect(country).not.toBeNull();
-      expect(country?.name).toBe('UnitedStates');
+      expect(country?.name).toBe('United States');
       expect(country?.code3).toBe('USA');
     });
 
     it('should be case-insensitive', () => {
       const country = getCountryByCode3('usa');
       expect(country).not.toBeNull();
-      expect(country?.name).toBe('UnitedStates');
+      expect(country?.name).toBe('United States');
     });
 
     it('should return null for invalid code', () => {
@@ -63,7 +63,7 @@ describe('Country Lookup Utils', () => {
     });
 
     it('should handle various countries', () => {
-      expect(getCountryByCode3('GBR')?.name).toBe('UnitedKingdom');
+      expect(getCountryByCode3('GBR')?.name).toBe('United Kingdom');
       expect(getCountryByCode3('DEU')?.name).toBe('Germany');
       expect(getCountryByCode3('JPN')?.name).toBe('Japan');
       expect(getCountryByCode3('IND')?.name).toBe('India');
@@ -112,7 +112,7 @@ describe('Country Lookup Utils', () => {
       expect(countries.length).toBeGreaterThan(0);
       
       const countryNames = countries.map(c => c.name);
-      expect(countryNames).toContain('UnitedStates');
+      expect(countryNames).toContain('United States');
     });
 
     it('should be case-insensitive', () => {
@@ -139,7 +139,7 @@ describe('Country Lookup Utils', () => {
       expect(countries.length).toBeGreaterThan(0);
       
       const countryNames = countries.map(c => c.name);
-      expect(countryNames).toContain('UnitedStates');
+      expect(countryNames).toContain('United States');
       expect(countryNames).toContain('Canada');
     });
 
@@ -150,7 +150,7 @@ describe('Country Lookup Utils', () => {
 
     it('should return countries with other calling codes', () => {
       const ukCountries = getCountriesByCallingCode('+44');
-      expect(ukCountries.some(c => c.name === 'UnitedKingdom')).toBe(true);
+      expect(ukCountries.some(c => c.name === 'United Kingdom')).toBe(true);
     });
   });
 
@@ -160,9 +160,9 @@ describe('Country Lookup Utils', () => {
       expect(results.length).toBeGreaterThan(0);
       
       const names = results.map(c => c.name);
-      expect(names).toContain('UnitedStates');
-      expect(names).toContain('UnitedKingdom');
-      expect(names).toContain('UnitedArabEmirates');
+      expect(names).toContain('United States');
+      expect(names).toContain('United Kingdom');
+      expect(names).toContain('United Arab Emirates');
     });
 
     it('should be case-insensitive by default', () => {
@@ -209,7 +209,7 @@ describe('Country Lookup Utils', () => {
 
   describe('getCallingCode', () => {
     it('should get calling code by country name', () => {
-      expect(getCallingCode('UnitedStates')).toBe('+1');
+      expect(getCallingCode('United States')).toBe('+1');
       expect(getCallingCode('Germany')).toBe('+49');
       expect(getCallingCode('Japan')).toBe('+81');
     });
@@ -231,7 +231,7 @@ describe('Country Lookup Utils', () => {
 
   describe('getCurrencyCode', () => {
     it('should get currency code by country name', () => {
-      expect(getCurrencyCode('UnitedStates')).toBe('USD');
+      expect(getCurrencyCode('United States')).toBe('USD');
       expect(getCurrencyCode('Germany')).toBe('EUR');
       expect(getCurrencyCode('Japan')).toBe('JPY');
     });
@@ -253,7 +253,7 @@ describe('Country Lookup Utils', () => {
 
   describe('getCurrencySymbol', () => {
     it('should get currency symbol by country name', () => {
-      expect(getCurrencySymbol('UnitedStates')).toBe('$');
+      expect(getCurrencySymbol('United States')).toBe('$');
       expect(getCurrencySymbol('Japan')).toBe('¥');
     });
 

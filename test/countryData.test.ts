@@ -10,7 +10,7 @@ describe('CountryData', () => {
 
     it('should have complete data for each country', () => {
       const us = CountryData.UnitedStates;
-      expect(us.name).toBe('UnitedStates');
+      expect(us.name).toBe('United States');
       expect(us.code2).toBe('US');
       expect(us.code3).toBe('USA');
       expect(us.callingCode).toBe('+1');
@@ -74,7 +74,7 @@ describe('CountryData', () => {
       const countries = getAllCountries();
       const countryNames = countries.map(c => c.name);
       
-      expect(countryNames).toContain('UnitedStates');
+      expect(countryNames).toContain('United States');
       expect(countryNames).toContain('China');
       expect(countryNames).toContain('India');
       expect(countryNames).toContain('Germany');
